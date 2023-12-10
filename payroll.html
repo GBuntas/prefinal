@@ -4,6 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Light gray background */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333; /* Dark text */
+        }
+
+        #left-section {
+            width: 80%;
+            max-width: 600px; /* Adjust the max-width based on your preference */
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333; /* Dark heading color */
+        }
+
+        input, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd; /* Light border color */
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green button color */
+            color: #fff; /* White text */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Light border color */
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50; /* Green header background */
+            color: white; /* White text */
+        }
+
+        td {
+            background-color: #f2f2f2; /* Light gray cell background */
+        }
+    </style>
 </head>
 <body>
 
@@ -67,7 +136,7 @@
 
             payrollList.forEach((employee, index) => {
                 let row = table.insertRow(-1);
-                row.innerHTML = <td>${index + 1}</td><td>${employee.name}</td><td>${employee.daysWorked}</td><td>${employee.dailyRate}</td><td>${employee.grossPay}</td><td>${employee.deductionAmount}</td><td>${employee.netPay}</td><td><button onclick="deleteEmployee(${index})">Delete</button></td>;
+                row.innerHTML = `<td>${index + 1}</td><td>${employee.name}</td><td>${employee.daysWorked}</td><td>${employee.dailyRate}</td><td>${employee.grossPay}</td><td>${employee.deductionAmount}</td><td>${employee.netPay}</td><td><button onclick="deleteEmployee(${index})">Delete</button></td>`;
             });
         }
 
