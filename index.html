@@ -7,18 +7,19 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5; /* Light gray background */
             text-align: center;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: row;
-            align-items: stretch;
+            flex-direction: column;
+            align-items: center;
             height: 100vh;
+            color: #333; /* Dark text */
         }
 
         header {
-            background-color: #333;
+            background-color: #1565c0; /* Dark blue header background */
             padding: 15px;
             color: white;
             text-align: center;
@@ -28,21 +29,45 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #ddd;
+            background-color: #1976d2; /* Blue navigation background */
             padding: 10px;
             width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #64b5f6; /* Lighter blue link color */
             margin: 0 15px;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1565c0; /* Darker blue on hover */
         }
 
         #content {
-            flex: 1;
             padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+            background-color: #ffffff; /* White content background */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #333; /* Dark text color */
+        }
+
+        img {
+            width: 100%; /* Make the image fill its container */
+            max-width: 800px; /* Limit the image width to 800px */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Add some space below the image */
         }
     </style>
 </head>
@@ -60,6 +85,7 @@
     </nav>
 
     <div id="content">
+        <img src="technology.jpg" alt="Technology Image">
         <p>Welcome to the CS 1130 Pre-Final Project!</p>
         <p>Please select a section from the navigation bar.</p>
     </div>
