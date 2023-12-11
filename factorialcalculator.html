@@ -9,33 +9,46 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             margin: 50px;
-            background-color: #f4f4f4;
+            background-color: #e6f7ff; /* Light blue background */
+        }
+
+        #homeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff; /* Blue button color */
+            color: white; /* White text color */
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
         }
 
         h1 {
-            color: #333;
+            color: #004080; /* Dark blue text color */
         }
 
         label {
             font-size: 18px;
             margin-top: 20px;
             display: block;
-            color: #555;
+            color: #0056b3; /* Medium blue color */
         }
 
         input {
             padding: 10px;
             font-size: 16px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #0056b3; /* Medium blue border color */
             border-radius: 5px;
             width: 200px;
             box-sizing: border-box;
         }
 
         button {
-            background-color: #4caf50;
-            color: white;
+            background-color: #007bff; /* Blue button color */
+            color: white; /* White text color */
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -45,17 +58,19 @@
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #0056b3; /* Darker blue on hover */
         }
 
         #results {
             margin-top: 30px;
             font-size: 18px;
-            color: #333;
+            color: #004080; /* Dark blue text color */
         }
     </style>
 </head>
 <body>
+    <a href="index.html" id="homeButton">Home</a>
+
     <h1>Nth Factorial, Sum, and Average Calculator</h1>
 
     <label for="numberInput">Enter an integer (n):</label>
@@ -104,4 +119,3 @@
     </script>
 </body>
 </html>
-
