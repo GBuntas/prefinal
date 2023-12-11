@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,8 @@
             left: 10px;
             background-color: #0056b3; /* Dark blue button color */
             color: #ffffff; /* White button text color */
-            border: none;
+            border: 1px solid #0056b3; /* Blue border color */
+            text-decoration: none; /* Remove underline */
             padding: 8px 12px;
             border-radius: 3px;
             cursor: pointer;
@@ -74,8 +75,7 @@
 </head>
 <body>
     <div id="container">
-      
-        <button onclick="homeButton()" href="index.html">HOME</button>
+        <a href="index.html" id="homeButton">Home</a>
         <h1>Unit Converter</h1>
 
         <table>
