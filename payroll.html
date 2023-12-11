@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5; /* Light gray background */
+            background-color: #e6f7ff; /* Light blue background */
             text-align: center;
             margin: 0;
             padding: 0;
@@ -16,7 +16,20 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            color: #333; /* Dark text */
+            color: #004080; /* Dark blue text */
+        }
+
+        #homeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff; /* Blue button color */
+            color: white; /* White text color */
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
         }
 
         #left-section {
@@ -24,32 +37,32 @@
             max-width: 600px; /* Adjust the max-width based on your preference */
             margin: auto;
             padding: 20px;
-            background-color: #fff; /* White background */
+            background-color: #ffffff; /* White background */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
             border-radius: 10px; /* Rounded corners */
         }
 
         h2 {
             margin-bottom: 20px;
-            color: #333; /* Dark heading color */
+            color: #004080; /* Dark blue heading color */
         }
 
         input, button {
             margin-bottom: 15px;
             padding: 10px;
-            border: 1px solid #ddd; /* Light border color */
+            border: 1px solid #0056b3; /* Medium blue border color */
             border-radius: 5px;
         }
 
         button {
-            background-color:  #0000FF; /* Green button color */
+            background-color:  #007bff; /* Blue button color */
             color: #fff; /* White text */
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
         button:hover {
-            background-color: #00008B; /* Darker green on hover */
+            background-color: #0056b3; /* Darker blue on hover */
         }
 
         table {
@@ -59,22 +72,24 @@
         }
 
         th, td {
-            border: 1px solid #ddd; /* Light border color */
+            border: 1px solid #0056b3; /* Medium blue border color */
             padding: 12px;
             text-align: left;
         }
 
         th {
-            background-color:  #0000FF; /* Green header background */
+            background-color:  #007bff; /* Blue header background */
             color: white; /* White text */
         }
 
         td {
-            background-color: #f2f2f2; /* Light gray cell background */
+            background-color: #e6f7ff; /* Light blue cell background */
         }
     </style>
 </head>
 <body>
+
+    <a href="index.html" id="homeButton">Home</a>
 
     <div id="left-section">
         <h2>Employee Payroll System</h2>
