@@ -18,6 +18,19 @@
             height: 100vh;
         }
 
+        #homeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #2980b9; /* Darker blue button color */
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
         #container {
             border: 1px solid #2980b9; /* Darker blue border color */
             border-radius: 5px;
@@ -55,20 +68,6 @@
             cursor: pointer;
         }
 
-        #homeButton {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #2980b9; /* Darker blue button color */
-            color: #fff;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            text-decoration: none;
-            margin-bottom: 20px;
-        }
-
         #result {
             margin-top: 20px;
             font-weight: bold;
@@ -77,8 +76,9 @@
     </style>
 </head>
 <body>
+    <a href="index.html" id="homeButton">Home</a>
+    
     <div id="container">
-        <a href="index.html" id="homeButton">Home</a>
         <h1>Income Tax Calculator</h1>
 
         <form id="taxCalculator" class="tax-calculator">
