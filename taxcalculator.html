@@ -18,6 +18,15 @@
             height: 100vh;
         }
 
+        #container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            position: relative; /* Added for positioning */
+        }
+
         h1 {
             color: #333;
         }
@@ -46,6 +55,20 @@
             cursor: pointer;
         }
 
+        #homeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
         #result {
             margin-top: 20px;
             font-weight: bold;
@@ -54,15 +77,18 @@
     </style>
 </head>
 <body>
-    <h1>Income Tax Calculator</h1>
+    <div id="container">
+        <a href="index.html" id="homeButton">Home</a>
+        <h1>Income Tax Calculator</h1>
 
-    <form id="taxCalculator" class="tax-calculator">
-        <label for="income">Enter your annual income (₱):</label>
-        <input type="number" name="income" id="income" required>
-        <input type="submit" value="Calculate Tax">
-    </form>
+        <form id="taxCalculator" class="tax-calculator">
+            <label for="income">Enter your annual income (₱):</label>
+            <input type="number" name="income" id="income" required>
+            <input type="submit" value="Calculate Tax">
+        </form>
 
-    <div id="result"></div>
+        <div id="result"></div>
+    </div>
 
     <script>
         const taxCalculator = document.getElementById('taxCalculator');
@@ -75,7 +101,7 @@
             const income = parseFloat(incomeInput.value);
             const tax = calculateTax(income);
 
-            resultDiv.textContent = Your income tax is: ₱${tax.toFixed(2)};
+            resultDiv.textContent = `Your income tax is: ₱${tax.toFixed(2)}`;
         });
 
         function calculateTax(income) {
